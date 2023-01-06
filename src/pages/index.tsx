@@ -8,7 +8,7 @@ import background from "../assets/background.png";
 import Section from "../components/section";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
-import Grid from "../components/grid";
+import { Col3 } from "../components/grid";
 
 const IndexPage = () => {
   return (
@@ -41,7 +41,7 @@ const IndexPage = () => {
           존재합니다.
         </p>
         <p>각 강좌 내 세부 강좌들은 선택적으로 수강할 수 있는 구조를 통해, 개인의 개발 목적에 맞는 유연한 강의 수강이 가능합니다.</p>
-        <Grid>
+        <Col3>
           <Feature
             title="프로그래밍 기초"
             subTitle="100시간"
@@ -57,7 +57,7 @@ const IndexPage = () => {
             subTitle="심화"
             description="현업에서 사용할 수 있는 기술을 배우기 위해 SW기술역량 교육은 여러가지 분야에 대한 이론 및 실습 강좌를 통해 현업 SW개발자가 되기 위한 준비를 도와줍니다."
           />
-        </Grid>
+        </Col3>
       </Section>
       <Section>
         <Title>참여기업 프로젝트</Title>
@@ -69,7 +69,7 @@ const IndexPage = () => {
         </Card>
         <p>프로젝트는 크게 스마트 팩토리 헬스케어 게임 로 구성되어 있으며 각 주제 아래 세부 주제들의 프로젝트가 존재합니다.</p>
         <p>팀 구성별 난이도에 따라 2~3개의 프로젝트를 선택하여 수행하며, 각 프로젝트당 60~90시간 정도가 소요됩니다.</p>
-        <Grid>
+        <Col3>
           <Feature
             dark
             title="스마트 팩토리"
@@ -85,11 +85,11 @@ const IndexPage = () => {
             title="게임"
             description="게임산업에서 많이 사용되는 프로그램의 실습과 사용을 통해 현업 역량을 양성할 수 있으며, 슈팅 게임, 아케이드 게임, RPG 게임, 퍼즐 게임, 플랫폼 등의 프로젝트를 경험할 수 있습니다."
           />
-        </Grid>
+        </Col3>
       </Section>
       <Section grayish>
         <Title>참여 혜택</Title>
-        <Grid>
+        <Col3>
           <Feature
             title="학점인정"
             icon={<MdSchool style={{ color: "#202c3c", fontSize: "36px" }} />}
@@ -115,7 +115,7 @@ const IndexPage = () => {
             icon={<MdBadge style={{ color: "#202c3c", fontSize: "36px" }} />}
             description="수료 성적 상위 10% SK, MDS 등 기업 채용형 인턴 확정, 수료인원에 한해서는 서류 면제 협의중."
           />
-        </Grid>
+        </Col3>
       </Section>
       <Section>
         <Title>교육 일정</Title>

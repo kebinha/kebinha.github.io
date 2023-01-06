@@ -6,6 +6,7 @@ interface FeatureProps {
   subTitle?: string;
   description?: string;
   icon?: React.ReactElement;
+  onClick?: React.MouseEventHandler;
 }
 
 interface FeatureStyles {
@@ -52,7 +53,7 @@ const IconWrapper = styled.div`
 
 const Feature = (props: FeatureProps & FeatureStyles) => {
   return (
-    <StyledDiv dark={props.dark}>
+    <StyledDiv dark={props.dark} onClick={props.onClick}>
       <StyledH2 dark={props.dark}>
         <IconWrapper>{props.icon}</IconWrapper>
         {props.title}

@@ -94,19 +94,17 @@ const Header = () => {
             <Logo>K-Software BootCamp</Logo>
           </Link>
           <MenuGroup>
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/curriculum" style={{ textDecoration: "none" }}>
               <Menu>교육과정</Menu>
             </Link>
-            <a href="https://forms.gle/qvwVGqCjwHGWdsrs7" style={{ textDecoration: "none", marginLeft: "10px" }}>
+            <a href="https://forms.gle/qvwVGqCjwHGWdsrs7" target="_blank" style={{ textDecoration: "none", marginLeft: "10px" }}>
               <Menu highlight>신청하기</Menu>
             </a>
           </MenuGroup>
           <SideBarButton>
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <Menu highlight>
-                <MdMenu style={{ fontSize: "20px" }} onClick={toggle} />
-              </Menu>
-            </Link>
+            <Menu highlight>
+              <MdMenu style={{ fontSize: "20px" }} onClick={toggle} />
+            </Menu>
           </SideBarButton>
         </InnerWrapper>
       </StyledHeader>
@@ -114,12 +112,12 @@ const Header = () => {
         <SideBarWrapper>
           <SideBar>
             <MdClose style={{ fontSize: "20px", padding: "28px" }} onClick={toggle} />
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/curriculum" style={{ textDecoration: "none" }}>
               <Menu>교육과정</Menu>
             </Link>
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <a href="https://forms.gle/qvwVGqCjwHGWdsrs7" target="_blank" style={{ textDecoration: "none" }}>
               <Menu>신청하기</Menu>
-            </Link>
+            </a>
           </SideBar>
         </SideBarWrapper>
       )}

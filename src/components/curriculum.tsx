@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { MdExpandMore, MdExpandLess } from "react-icons/md";
 
-interface Section {
+export interface Section {
   title: string;
   units?: string[];
 }
@@ -43,7 +43,7 @@ const Section = (props: React.TdHTMLAttributes<never> & SectionProps & SectionSt
     <>
       <tr>
         <StyledTd onClick={toggle} isUnit={props.isUnit}>
-          {props.section.title}
+          <span>{props.section.title}</span>
           {props.expand && (open ? <MdExpandLess style={buttonStyle} /> : <MdExpandMore style={buttonStyle} />)}
         </StyledTd>
       </tr>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default styled.div`
+export const Col3 = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-columns: 1fr;
