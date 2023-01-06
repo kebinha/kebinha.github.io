@@ -9,7 +9,7 @@ interface FeatureProps {
 }
 
 interface FeatureStyles {
-  theme?: string;
+  dark?: boolean;
 }
 
 const StyledDiv = styled.div<FeatureStyles>`
@@ -17,8 +17,8 @@ const StyledDiv = styled.div<FeatureStyles>`
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  padding: 40px 50px;
-  background-color: ${(props) => (props.theme === "dark" ? "#202c3c" : "#ffffff")};
+  padding: 35px 40px;
+  background-color: ${(props) => (props.dark ? "#202c3c" : "#ffffff")};
   @media (max-width: 420px) {
     padding: 20px 30px;
   }
@@ -29,17 +29,17 @@ const StyledH2 = styled.h2<FeatureStyles>`
   width: 100%;
   font-size: 24px;
   text-align: center;
-  color: ${(props) => (props.theme === "dark" ? "#ffffff" : "#000000")};
+  color: ${(props) => (props.dark ? "#ffffff" : "#000000")};
 `;
 
 const StyledSpan = styled.span<FeatureStyles>`
   font-size: 12px;
-  color: ${(props) => (props.theme === "dark" ? "#C2C2C2" : "#646464")};
+  color: ${(props) => (props.dark ? "#C2C2C2" : "#646464")};
 `;
 
 const StyledP = styled.p<FeatureStyles>`
   font-size: 12px;
-  color: ${(props) => (props.theme === "dark" ? "#ffffff" : "#646464")};
+  color: ${(props) => (props.dark ? "#ffffff" : "#646464")};
 `;
 
 const IconWrapper = styled.div`
@@ -52,13 +52,13 @@ const IconWrapper = styled.div`
 
 const Feature = (props: FeatureProps & FeatureStyles) => {
   return (
-    <StyledDiv theme={props.theme}>
-      <StyledH2 theme={props.theme}>
+    <StyledDiv dark={props.dark}>
+      <StyledH2 dark={props.dark}>
         <IconWrapper>{props.icon}</IconWrapper>
         {props.title}
       </StyledH2>
-      <StyledSpan theme={props.theme}>{props.subTitle}</StyledSpan>
-      <StyledP theme={props.theme}>{props.description}</StyledP>
+      <StyledSpan dark={props.dark}>{props.subTitle}</StyledSpan>
+      <StyledP dark={props.dark}>{props.description}</StyledP>
     </StyledDiv>
   );
 };

@@ -12,6 +12,9 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-styled-components`,
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };
 

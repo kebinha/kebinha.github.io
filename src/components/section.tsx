@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 interface SectionProps {
-  children: React.ReactElement;
+  children: React.ReactNode;
 }
 
 interface SectionStyle {
@@ -15,6 +15,8 @@ const StyledSection = styled.section<SectionStyle>`
 `;
 
 const InnerWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;

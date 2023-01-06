@@ -10,6 +10,9 @@ const StyledFooter = styled.footer`
   padding: 30px 0;
   background-color: #202c3c;
   color: #ffffff;
+  @media (max-width: 580px) {
+    padding: 50px 0;
+  }
 `;
 
 const InnerWrapper = styled.div`
