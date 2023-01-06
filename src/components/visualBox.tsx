@@ -17,6 +17,9 @@ const VisualBoxWrapper = styled.div`
   justify-content: center;
   width: 100vw;
   height: 300px;
+  @media (max-width: 450px) {
+    height: 400px;
+  }
 `;
 
 const StyledDiv = styled.div<VisualBoxStyle>`
@@ -26,6 +29,9 @@ const StyledDiv = styled.div<VisualBoxStyle>`
   height: 300px;
   background-image: url(${(props) => props.img});
   filter: brightness(0.4);
+  @media (max-width: 450px) {
+    height: 400px;
+  }
 `;
 
 const TitleWrapper = styled.div`

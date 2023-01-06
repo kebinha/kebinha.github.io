@@ -14,8 +14,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <VisualBox
-        title="K-Software BootCamp"
-        subTitle="인하대학교에서 SW 개발에 관심있는 인재를 양성하고 현업 중심의 프로젝트를 경험할 수 있는 <2023 K-Software BootCamp>를 시작합니다"
+        title="K-Software Empowerment BootCamp"
+        subTitle="인하대학교에서 SW 개발에 관심있는 인재를 양성하고 현업 중심의 프로젝트를 경험할 수 있는 <2023 K-Software Empowerment BootCamp>를 시작합니다"
         img={background}
       />
       <Section>
@@ -63,8 +63,8 @@ const IndexPage = () => {
         <Title>참여기업 프로젝트</Title>
         <Card grayish>
           <p style={{ fontWeight: "bold" }}>
-            27개 참여기업(SK CC, Kakao, Nexon, 한글과컴퓨터, NeoWiz등)의 현업 멘토들과 함께 실제 기업에서 직면하는 문제를 해결하고 프로젝트를 진행하며 현업
-            역량을 갖춘 SW 개발자로 거듭날 수 있습니다.
+            27개 참여기업(SK CC, Kakao, Nexon, 한글과컴퓨터, NeoWiz, 오비고, 포스트시뮬레이션, 네오드림등)의 현업 멘토들과 함께 실제 기업에서 직면하는 문제를
+            해결하고 프로젝트를 진행하며 현업 역량을 갖춘 SW 개발자로 거듭날 수 있습니다.
           </p>
         </Card>
         <p>프로젝트는 크게 스마트 팩토리 헬스케어 게임 로 구성되어 있으며 각 주제 아래 세부 주제들의 프로젝트가 존재합니다.</p>
@@ -85,6 +85,11 @@ const IndexPage = () => {
             title="게임"
             description="게임산업에서 많이 사용되는 프로그램의 실습과 사용을 통해 현업 역량을 양성할 수 있으며, 슈팅 게임, 아케이드 게임, RPG 게임, 퍼즐 게임, 플랫폼 등의 프로젝트를 경험할 수 있습니다."
           />
+          <Feature
+            dark
+            title="자율주행"
+            description="자율주행의 핵심 인공지능 기술과 시스템에 대한 역량을 양성할 수 있으며 어떻게 인공지능이 자율주행의 모든 기능을 구현하고 있는지 어떻게 더 발전할 것인지를 이해할 수 있습니다."
+          />
         </Col3>
       </Section>
       <Section grayish>
@@ -98,17 +103,17 @@ const IndexPage = () => {
           <Feature
             title="교육지원금"
             icon={<MdPaid style={{ color: "#202c3c", fontSize: "36px" }} />}
-            description="교육 지원금을 제공하여 비용 걱정 없이 학습에만 집중할 수 있도록 최선의 지원을 아끼지 않습니다."
+            description="교육 지원금을 제공하여 비용 걱정 없이 학습에만 집중할 수 있도록 최선의 지원을 아끼지 않습니다 (금액 미정)"
           />
           <Feature
             title="교통"
             icon={<MdDirectionsBus style={{ color: "#202c3c", fontSize: "36px" }} />}
-            description="판교 교육장까지의 거리가 먼 경우를 위해 무료 셔틀버스 운행을 운행합니다."
+            description="판교 교육장까지의 거리가 먼 경우를 위해 무료 셔틀버스 운행을 운행 (예정, 변경가능)"
           />
           <Feature
             title="중/석식비"
             icon={<MdRestaurant style={{ color: "#202c3c", fontSize: "36px" }} />}
-            description="교육 수강자 전부에게 중/석식비를 제공"
+            description="교육 수강자 전부에게 중/석식비를 제공 (예정, 변경가능)"
           />
           <Feature
             title="인턴/서류면제"
@@ -120,11 +125,11 @@ const IndexPage = () => {
       <Section>
         <Title>교육 일정</Title>
         <Card grayish ma="0 0 20px 0">
-          <h3>기초 교육</h3>
+          <h3>대학 기초 교육</h3>
           <ul>
             <li>기간: 1~2월(주 5일)</li>
             <li>수업시간: 10:00시작 수업 6시간, 4시간 실습 및 질문 (조교 항시상주), 280시간</li>
-            <li>수업방식: 오프라인</li>
+            <li>수업방식: 온라인/오프라인</li>
             <li>위치: 60주년기념관 808호(수업), 1401A호(실습)</li>
           </ul>
         </Card>
@@ -138,14 +143,14 @@ const IndexPage = () => {
           </ul>
         </Card>
         <Card grayish ma="0 0 30px 0">
-          <h3>대학별 프로젝트</h3>
+          <h3>대학별 집체교육 프로젝트</h3>
           <ul>
             <li>기간: 6월~9월</li>
             <li>수업시간: 총 360시간</li>
-            <li>수업방식: 온라인</li>
+            <li>수업방식: 온라인/오프라인</li>
           </ul>
         </Card>
-        <StaticImage src="../assets/plan.png" alt="plan" style={{ alignSelf: "center" }} />
+        {/* <StaticImage src="../assets/plan.png" alt="plan" style={{ alignSelf: "center" }} /> */}
       </Section>
     </Layout>
   );

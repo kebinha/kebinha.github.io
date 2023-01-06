@@ -34,7 +34,7 @@ const MenuGroup = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  @media (max-width: 480px) {
+  @media (max-width: 610px) {
     display: none;
   }
 `;
@@ -43,7 +43,7 @@ const SideBarButton = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  @media (min-width: 481px) {
+  @media (min-width: 611px) {
     display: none;
   }
 `;
@@ -59,7 +59,7 @@ const Menu = styled.span<MenuProps>`
 `;
 
 const SideBarWrapper = styled.div`
-  @media (min-width: 481px) {
+  @media (min-width: 611px) {
     display: none;
   }
   position: fixed;
@@ -91,7 +91,7 @@ const Header = () => {
       <StyledHeader>
         <InnerWrapper>
           <Link to="/" style={{ textDecoration: "none" }}>
-            <Logo>K-Software BootCamp</Logo>
+            <Logo>K-Software Empowerment BootCamp</Logo>
           </Link>
           <MenuGroup>
             <Link to="/curriculum" style={{ textDecoration: "none" }}>
