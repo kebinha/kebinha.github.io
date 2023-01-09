@@ -30,6 +30,7 @@ const StyledTd = styled.td<SectionStyle>`
   padding: 15px 20px;
   padding-left: ${(props) => props.isUnit && "50px"};
   background-color: ${(props) => (props.isUnit ? "#ffffff" : "#f4f4f4")};
+  cursor: ${(props) => props.expand && "pointer"};
 `;
 
 const Section = (props: React.TdHTMLAttributes<never> & SectionProps & SectionStyle) => {
@@ -42,7 +43,7 @@ const Section = (props: React.TdHTMLAttributes<never> & SectionProps & SectionSt
   return (
     <>
       <tr>
-        <StyledTd onClick={toggle} isUnit={props.isUnit}>
+        <StyledTd onClick={toggle} isUnit={props.isUnit} expand={props.expand}>
           <span>{props.section.title}</span>
           {props.expand && (open ? <MdExpandLess style={buttonStyle} /> : <MdExpandMore style={buttonStyle} />)}
         </StyledTd>
