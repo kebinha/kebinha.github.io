@@ -80,7 +80,6 @@ const IconWrapper = styled.div`
 `;
 
 const Feature = (props: FeatureProps & FeatureStyles) => {
-  console.log(props.children);
   return (
     <FeatureWrapper>
       <StyledDiv dark={props.dark} onClick={props.onClick} clickAvailable={props.onClick !== undefined} arrowAfter={props.arrowAfter}>

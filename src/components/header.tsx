@@ -34,7 +34,7 @@ const MenuGroup = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  @media (max-width: 610px) {
+  @media (max-width: 720px) {
     display: none;
   }
 `;
@@ -43,7 +43,7 @@ const SideBarButton = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  @media (min-width: 611px) {
+  @media (min-width: 721px) {
     display: none;
   }
 `;
@@ -59,7 +59,7 @@ const Menu = styled.span<MenuProps>`
 `;
 
 const SideBarWrapper = styled.div`
-  @media (min-width: 611px) {
+  @media (min-width: 721px) {
     display: none;
   }
   position: fixed;
