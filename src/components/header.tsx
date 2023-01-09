@@ -97,6 +97,9 @@ const Header = () => {
             <Link to="/curriculum" style={{ textDecoration: "none" }}>
               <Menu>교육과정</Menu>
             </Link>
+            <Link to="/recruitment" style={{ textDecoration: "none" }}>
+              <Menu>교육일정</Menu>
+            </Link>
             <a href="https://forms.gle/qvwVGqCjwHGWdsrs7" target="_blank" style={{ textDecoration: "none", marginLeft: "10px" }}>
               <Menu highlight>신청하기</Menu>
             </a>
@@ -114,6 +117,9 @@ const Header = () => {
             <MdClose style={{ fontSize: "20px", padding: "28px" }} onClick={toggle} />
             <Link to="/curriculum" style={{ textDecoration: "none" }}>
               <Menu>교육과정</Menu>
+            </Link>
+            <Link to="/recruitment" style={{ textDecoration: "none" }}>
+              <Menu>교육일정</Menu>
             </Link>
             <a href="https://forms.gle/qvwVGqCjwHGWdsrs7" target="_blank" style={{ textDecoration: "none" }}>
               <Menu>신청하기</Menu>
