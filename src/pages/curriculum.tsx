@@ -9,6 +9,7 @@ import Feature from "../components/feature";
 import Card from "../components/card";
 import curriculum, { CurriculumItemType } from "../constants/curriculum";
 import Curriculum from "../components/curriculum";
+import Seo from "../components/seo";
 
 const Subject = (props: { subject: CurriculumItemType }) => {
   return (
@@ -110,3 +111,6 @@ const CurriculumPage = () => {
 };
 
 export default CurriculumPage;
+export const Head = () => {
+  return <Seo title="교육과정" />;
+};

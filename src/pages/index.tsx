@@ -9,6 +9,7 @@ import Section from "../components/section";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
 import { Col3 } from "../components/grid";
+import Seo from "../components/seo";
 
 const IndexPage = () => {
   return (
@@ -154,3 +155,6 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+export const Head = () => {
+  return <Seo title="K-Software Empowerment BootCamp" />;
+};

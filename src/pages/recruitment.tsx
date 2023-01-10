@@ -7,6 +7,7 @@ import Title from "../components/title";
 import Card from "../components/card";
 import Feature from "../components/feature";
 import { Col5 } from "../components/grid";
+import Seo from "../components/seo";
 
 const CurriculumPage = () => {
   return (
@@ -82,3 +83,6 @@ const CurriculumPage = () => {
 };
 
 export default CurriculumPage;
+export const Head = () => {
+  return <Seo title="교육일정" />;
+};
