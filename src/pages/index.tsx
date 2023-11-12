@@ -19,6 +19,7 @@ const IndexPage = () => {
                 subTitle="인하대학교에서 SW 개발에 관심있는 인재를 양성하고 현업 중심의 프로젝트를 경험할 수 있는 <2024 K-Software Empowerment BootCamp>를 시작합니다"
                 img={background}
             />
+
             <Section>
                 <Title>프로그램 소개</Title>
                 <p>
@@ -30,6 +31,14 @@ const IndexPage = () => {
                     또한 비전공자 학생들을 위하여 인공지능에 대해 보다 더 세분화하여 교육예정입니다.
                 </p>
                 <StaticImage src="../assets/abstract-2024.png" alt="abstract" />
+
+                <iframe
+                    width="100%"
+                    height="500px"
+                    src="https://www.youtube.com/embed/0A9Xy1k5r4A?si=cnjpUnzzDC1IUj7Z"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
             </Section>
             <Section grayish>
                 <Title>대학연합 개설과목</Title>
